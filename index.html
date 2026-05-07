@@ -25,17 +25,17 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-image">
-      <img
-        src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=80"
-        alt="Lush green botanical garden"
-      />
+      <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=80" alt="Lush green botanical garden" />
       <div class="hero-overlay"></div>
     </div>
     <div class="container hero-content">
       <p class="hero-eyebrow">Your green companion</p>
       <h1>Help Your Plants<br /><em>Flourish</em></h1>
-      <p class="hero-sub">Simple, loving guides for every plant parent — whether you're nurturing your first succulent or tending a full indoor jungle.</p>
-      <a href="#basics" class="btn">Start Learning</a>
+      <p class="hero-sub">Answer a few questions and we'll diagnose exactly what your plant needs.</p>
+      <div class="hero-cta-wrap">
+        <button class="btn btn-hero" id="get-started-btn">&#127807; Diagnose My Plant</button>
+        <p class="hero-cta-note">Free &middot; Takes 2 minutes &middot; No signup needed</p>
+      </div>
     </div>
   </section>
 
@@ -46,13 +46,9 @@
       <h2>The Basics</h2>
       <p class="section-sub">Three things every plant needs to survive and thrive.</p>
       <div class="grid-3">
-
         <div class="card">
           <div class="card-img-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=600&q=80"
-              alt="Watering a houseplant"
-            />
+            <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=600&q=80" alt="Watering a houseplant" />
           </div>
           <div class="card-body">
             <div class="card-icon">&#128167;</div>
@@ -60,13 +56,9 @@
             <p>Most plants prefer to dry out slightly between waterings. Check the soil with your finger — if the top inch is dry, it's time to water. Overwatering is the #1 cause of plant death.</p>
           </div>
         </div>
-
         <div class="card">
           <div class="card-img-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1459156212016-c812468e2115?auto=format&fit=crop&w=600&q=80"
-              alt="Plant on a sunny windowsill"
-            />
+            <img src="https://images.unsplash.com/photo-1459156212016-c812468e2115?auto=format&fit=crop&w=600&q=80" alt="Plant on a sunny windowsill" />
           </div>
           <div class="card-body">
             <div class="card-icon">&#9728;&#65039;</div>
@@ -74,13 +66,9 @@
             <p>Match your plant to your light conditions. Succulents love bright direct sun; ferns and pothos thrive in low indirect light. A south-facing window is the brightest spot in your home.</p>
           </div>
         </div>
-
         <div class="card">
           <div class="card-img-wrap">
-            <img
-              src="https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=600&q=80"
-              alt="Hands holding rich potting soil"
-            />
+            <img src="https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=600&q=80" alt="Hands holding rich potting soil" />
           </div>
           <div class="card-body">
             <div class="card-icon">&#127807;</div>
@@ -88,17 +76,13 @@
             <p>Use the right soil mix for your plant type. Cacti need fast-draining gritty mix; tropical plants prefer rich, moisture-retaining potting mix. Good drainage prevents root rot.</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Tips banner image -->
+  <!-- Banner -->
   <div class="banner-img">
-    <img
-      src="https://images.unsplash.com/photo-1463320726281-696a3cc57e3a?auto=format&fit=crop&w=1600&q=80"
-      alt="Collection of green houseplants"
-    />
+    <img src="https://images.unsplash.com/photo-1463320726281-696a3cc57e3a?auto=format&fit=crop&w=1600&q=80" alt="Collection of green houseplants" />
     <div class="banner-text">
       <p>"A garden is a grand teacher. It teaches patience and careful watchfulness."</p>
       <span>— Gertrude Jekyll</span>
@@ -123,21 +107,21 @@
           <span class="tip-icon">&#127795;</span>
           <div>
             <h4>Repotting</h4>
-            <p>Repot when you see roots escaping the drainage holes or growth slowing down. Go up one pot size at a time — too much space causes overwatering issues.</p>
+            <p>Repot when you see roots escaping the drainage holes or growth slowing down. Go up one pot size at a time.</p>
           </div>
         </div>
         <div class="tip-card">
           <span class="tip-icon">&#128166;</span>
           <div>
             <h4>Humidity</h4>
-            <p>Tropical plants love humidity. Group plants together, place a tray of pebbles and water underneath, or use a small humidifier near your plant corner.</p>
+            <p>Tropical plants love humidity. Group plants together or place a tray of pebbles and water underneath.</p>
           </div>
         </div>
         <div class="tip-card">
           <span class="tip-icon">&#129716;</span>
           <div>
             <h4>Fertilizing</h4>
-            <p>Feed your plants during the growing season (spring and summer) with a balanced liquid fertilizer every 2–4 weeks. Less is more — over-fertilizing burns roots.</p>
+            <p>Feed during the growing season (spring and summer) with a balanced liquid fertilizer every 2–4 weeks.</p>
           </div>
         </div>
       </div>
@@ -150,5 +134,335 @@
     <p class="footer-credit">Photos by <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></p>
   </footer>
 
+  <!-- ════════════════════════════════════
+       QUIZ OVERLAY
+  ════════════════════════════════════ -->
+  <div class="quiz-overlay" id="quiz-overlay" aria-hidden="true">
+
+    <div class="quiz-header">
+      <span class="quiz-logo">&#127807; PlantCare</span>
+      <div class="quiz-progress-wrap">
+        <div class="quiz-progress-bar" id="quiz-progress"></div>
+      </div>
+      <button class="quiz-close" id="quiz-close" aria-label="Close">&#10005;</button>
+    </div>
+
+    <div class="quiz-body">
+
+      <!-- ── SCREEN 1: Choose method ── -->
+      <div class="screen active" id="screen-1">
+        <div class="screen-inner">
+          <div class="screen-emoji">&#127807;</div>
+          <h2 class="screen-title">What plant do you have?</h2>
+          <p class="screen-sub">How would you like to identify it?</p>
+
+          <div class="method-cards">
+            <button class="method-card" id="photo-card">
+              <div class="method-card-img">&#128247;</div>
+              <div class="method-card-text">
+                <strong>Take a Photo</strong>
+                <p>Point your camera — we'll identify the plant for you.</p>
+              </div>
+              <span class="method-arrow">&#8250;</span>
+            </button>
+
+            <button class="method-card" id="list-card">
+              <div class="method-card-img">&#128269;</div>
+              <div class="method-card-text">
+                <strong>Search from a list</strong>
+                <p>Browse common houseplants with images.</p>
+              </div>
+              <span class="method-arrow">&#8250;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SCREEN CAMERA: Camera mock ── -->
+      <div class="screen" id="screen-camera">
+        <div class="screen-inner">
+          <div class="screen-emoji">&#128247;</div>
+          <h2 class="screen-title">Point at your plant</h2>
+          <p class="screen-sub">Hold steady — scanning in progress.</p>
+
+          <div class="viewfinder">
+            <img
+              src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=70"
+              alt="Camera viewfinder"
+              class="viewfinder-img"
+            />
+            <div class="scan-line-wrap" id="scan-line-wrap">
+              <div class="scan-line"></div>
+            </div>
+            <div class="viewfinder-corners">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div class="camera-result" id="camera-result">
+            <span class="camera-result-icon">&#127774;</span>
+            <div>
+              <p>We think it's a <strong id="mock-plant-name">Monstera Deliciosa</strong>!</p>
+              <p class="camera-result-sub">Confidence: 94%</p>
+            </div>
+            <button class="result-confirm-btn" id="camera-confirm">Use this &#10003;</button>
+          </div>
+
+          <div class="screen-footer">
+            <button class="btn-back" id="back-camera">&#8592; Back</button>
+            <button class="btn-next" id="next-camera" disabled>Next &rarr;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SCREEN SEARCH: Plant list ── -->
+      <div class="screen" id="screen-search">
+        <div class="screen-inner">
+          <div class="screen-emoji">&#128269;</div>
+          <h2 class="screen-title">Search for your plant</h2>
+          <p class="screen-sub">Type a name or scroll the list below.</p>
+
+          <div class="autocomplete-wrap">
+            <input
+              type="text"
+              id="plant-search"
+              class="plant-input"
+              placeholder="e.g. Monstera, Pothos, Snake Plant..."
+              autocomplete="off"
+            />
+            <ul class="plant-dropdown" id="plant-dropdown" role="listbox"></ul>
+          </div>
+
+          <div class="selected-plant" id="selected-plant-display" style="display:none">
+            <span class="selected-check">&#10003;</span>
+            <span id="selected-plant-name"></span>
+            <button class="chip-clear" id="clear-plant">Change</button>
+          </div>
+
+          <div class="all-plants-list" id="all-plants-list"></div>
+
+          <div class="screen-footer">
+            <button class="btn-back" id="back-search">&#8592; Back</button>
+            <button class="btn-next" id="next-search" disabled>Next &rarr;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SCREEN 2: Symptoms ── -->
+      <div class="screen" id="screen-2">
+        <div class="screen-inner">
+          <div class="screen-emoji">&#128269;</div>
+          <h2 class="screen-title">What does your plant look like?</h2>
+          <p class="screen-sub">Select all symptoms you notice — you can pick more than one.</p>
+
+          <div class="symptom-grid">
+
+            <button class="symptom-card" data-value="yellow-leaves" type="button">
+              <div class="symptom-img-wrap">
+                <img src="https://images.unsplash.com/photo-1550159930-40066082a4fc?auto=format&fit=crop&w=400&h=260&q=80" alt="Yellow leaves" onerror="this.style.display='none'" />
+                <div class="symptom-tick">&#10003;</div>
+              </div>
+              <div class="symptom-label">Yellow leaves</div>
+            </button>
+
+            <button class="symptom-card" data-value="brown-tips" type="button">
+              <div class="symptom-img-wrap">
+                <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=400&h=260&crop=entropy&q=80" alt="Brown tips" onerror="this.style.display='none'" />
+                <div class="symptom-tick">&#10003;</div>
+              </div>
+              <div class="symptom-label">Brown tips</div>
+            </button>
+
+            <button class="symptom-card" data-value="drooping" type="button">
+              <div class="symptom-img-wrap">
+                <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=400&h=260&q=80" alt="Drooping wilting plant" onerror="this.style.display='none'" />
+                <div class="symptom-tick">&#10003;</div>
+              </div>
+              <div class="symptom-label">Drooping / wilting</div>
+            </button>
+
+            <button class="symptom-card" data-value="dark-spots" type="button">
+              <div class="symptom-img-wrap">
+                <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=400&h=260&q=80" alt="Dark spots on leaf" onerror="this.style.display='none'" />
+                <div class="symptom-tick">&#10003;</div>
+              </div>
+              <div class="symptom-label">Dark spots</div>
+            </button>
+
+            <button class="symptom-card" data-value="pests" type="button">
+              <div class="symptom-img-wrap">
+                <img src="https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=400&h=260&q=80" alt="Pests on plant" onerror="this.style.display='none'" />
+                <div class="symptom-tick">&#10003;</div>
+              </div>
+              <div class="symptom-label">Pests visible</div>
+            </button>
+
+            <button class="symptom-card" data-value="pale-color" type="button">
+              <div class="symptom-img-wrap">
+                <img src="https://images.unsplash.com/photo-1459156212016-c812468e2115?auto=format&fit=crop&w=400&h=260&q=80" alt="Pale faded plant" onerror="this.style.display='none'" />
+                <div class="symptom-tick">&#10003;</div>
+              </div>
+              <div class="symptom-label">Pale / faded</div>
+            </button>
+
+            <button class="symptom-card" data-value="not-growing" type="button">
+              <div class="symptom-img-wrap">
+                <img src="https://images.unsplash.com/photo-1463320726281-696a3cc57e3a?auto=format&fit=crop&w=400&h=260&q=80" alt="Plant not growing" onerror="this.style.display='none'" />
+                <div class="symptom-tick">&#10003;</div>
+              </div>
+              <div class="symptom-label">Not growing</div>
+            </button>
+
+            <button class="symptom-card" data-value="mushy-stem" type="button">
+              <div class="symptom-img-wrap">
+                <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=400&h=260&crop=top&q=80" alt="Mushy overwatered stem" onerror="this.style.display='none'" />
+                <div class="symptom-tick">&#10003;</div>
+              </div>
+              <div class="symptom-label">Mushy stem</div>
+            </button>
+
+            <button class="symptom-card" data-value="leaf-drop" type="button">
+              <div class="symptom-img-wrap">
+                <img src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?auto=format&fit=crop&w=400&h=260&q=80" alt="Leaf drop" onerror="this.style.display='none'" />
+                <div class="symptom-tick">&#10003;</div>
+              </div>
+              <div class="symptom-label">Leaf drop</div>
+            </button>
+
+          </div>
+
+          <div class="screen-footer">
+            <button class="btn-back" id="back-2">&#8592; Back</button>
+            <button class="btn-next" id="next-2" disabled>Next &rarr;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SCREEN 3: Location & Light ── -->
+      <div class="screen" id="screen-3">
+        <div class="screen-inner">
+          <div class="screen-emoji">&#9728;&#65039;</div>
+          <h2 class="screen-title">Where does your plant live?</h2>
+          <p class="screen-sub">Light and location are key to plant health.</p>
+
+          <div class="question-group">
+            <p class="question-label">Where is it placed?</p>
+            <div class="chip-group" id="location-group">
+              <button class="chip" data-value="bright-window">&#129695; Bright window</button>
+              <button class="chip" data-value="indirect-light">&#127780; Indirect light</button>
+              <button class="chip" data-value="dark-corner">&#127968; Dark corner</button>
+              <button class="chip" data-value="office-desk">&#128188; Office desk</button>
+              <button class="chip" data-value="outdoors">&#127795; Outdoors</button>
+            </div>
+          </div>
+
+          <div class="question-group">
+            <p class="question-label">How long has it been there?</p>
+            <div class="chip-group" id="duration-group">
+              <button class="chip" data-value="just-moved">&#128666; Just moved it</button>
+              <button class="chip" data-value="few-weeks">&#128197; A few weeks</button>
+              <button class="chip" data-value="months">&#127807; Months / years</button>
+            </div>
+          </div>
+
+          <div class="screen-footer">
+            <button class="btn-back" id="back-3">&#8592; Back</button>
+            <button class="btn-next" id="next-3" disabled>Next &rarr;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SCREEN 4: Watering ── -->
+      <div class="screen" id="screen-4">
+        <div class="screen-inner">
+          <div class="screen-emoji">&#128167;</div>
+          <h2 class="screen-title">How do you water it?</h2>
+          <p class="screen-sub">Watering habits are the most common source of plant trouble.</p>
+
+          <div class="question-group">
+            <p class="question-label">How often do you water?</p>
+            <div class="watering-list" id="watering-group">
+              <button class="watering-row" data-value="daily">
+                <span class="watering-row-icon">&#128167;</span>
+                <div class="watering-row-text">
+                  <strong>Daily</strong>
+                  <span>I water every single day</span>
+                </div>
+                <span class="watering-row-check">&#10003;</span>
+              </button>
+              <button class="watering-row" data-value="every-few-days">
+                <span class="watering-row-icon">&#128167;&#128167;</span>
+                <div class="watering-row-text">
+                  <strong>Every few days</strong>
+                  <span>Every 2–3 days or so</span>
+                </div>
+                <span class="watering-row-check">&#10003;</span>
+              </button>
+              <button class="watering-row" data-value="weekly">
+                <span class="watering-row-icon">&#128197;</span>
+                <div class="watering-row-text">
+                  <strong>Weekly</strong>
+                  <span>Once a week, roughly</span>
+                </div>
+                <span class="watering-row-check">&#10003;</span>
+              </button>
+              <button class="watering-row" data-value="when-i-remember">
+                <span class="watering-row-icon">&#129300;</span>
+                <div class="watering-row-text">
+                  <strong>When I remember</strong>
+                  <span>Irregular — could be weeks</span>
+                </div>
+                <span class="watering-row-check">&#10003;</span>
+              </button>
+              <button class="watering-row" data-value="not-sure">
+                <span class="watering-row-icon">&#10067;</span>
+                <div class="watering-row-text">
+                  <strong>Not sure</strong>
+                  <span>Someone else waters it</span>
+                </div>
+                <span class="watering-row-check">&#10003;</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="question-group">
+            <p class="question-label">Does the pot have drainage holes?</p>
+            <div class="chip-group" id="drainage-group">
+              <button class="chip" data-value="yes">&#9989; Yes</button>
+              <button class="chip" data-value="no">&#10062; No</button>
+              <button class="chip" data-value="not-sure">&#10067; Not sure</button>
+            </div>
+          </div>
+
+          <div class="screen-footer">
+            <button class="btn-back" id="back-4">&#8592; Back</button>
+            <button class="btn-next" id="next-4" disabled>See Results &#127807;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SCREEN 5: Results ── -->
+      <div class="screen" id="screen-5">
+        <div class="screen-inner results-inner">
+          <div class="confetti-wrap" id="confetti-wrap"></div>
+
+          <div class="results-top">
+            <div class="screen-emoji">&#127807;</div>
+            <h2 class="screen-title">Here's what's happening with your <span id="results-plant-name">plant</span></h2>
+            <p class="screen-sub" id="diagnosis-intro">Based on your answers, we found these likely issues:</p>
+          </div>
+
+          <div class="diagnosis-list" id="diagnosis-list"></div>
+
+          <div class="results-actions">
+            <button class="btn-text" id="start-over">&#8617; Start over</button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /quiz-body -->
+  </div><!-- /quiz-overlay -->
+
+  <script src="app.js"></script>
 </body>
 </html>
