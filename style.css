@@ -69,6 +69,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   color: #fff;
   border: none;
   outline: none;
+  -webkit-tap-highlight-color: transparent;
   border-radius: 50px;
   padding: 20px 48px;
   font-family: 'Lato', sans-serif;
@@ -79,7 +80,8 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   animation: pulse-cta 2.2s ease-out infinite;
   transition: transform 0.2s, background 0.2s;
 }
-.btn-hero:focus { outline: none; }
+.btn-hero:focus,
+.btn-hero:focus-visible { outline: none; }
 .btn-hero:hover { background: #6a8c5e; transform: translateY(-3px); animation: none; box-shadow: 0 8px 28px rgba(0,0,0,0.25); }
 
 @keyframes pulse-cta {

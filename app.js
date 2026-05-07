@@ -40,7 +40,7 @@ const PROGRESS = {
   'screen-1': 1, 'screen-camera': 2, 'screen-search': 2,
   'screen-2': 3, 'screen-3': 4, 'screen-4': 5, 'screen-5': 7,
 };
-let currentId = 'screen-1';
+let currentId = 'none'; // sentinel — no real screen has this id
 
 /* ── Open / close ───────────────────────────── */
 document.getElementById('get-started-btn').addEventListener('click', () => {
@@ -63,9 +63,11 @@ function goTo(nextId) {
   const next = document.getElementById(nextId);
   state.prevScreen = currentId;
 
-  prev.classList.add('exit');
-  prev.classList.remove('active');
-  setTimeout(() => prev.classList.remove('exit'), 380);
+  if (prev) {
+    prev.classList.add('exit');
+    prev.classList.remove('active');
+    setTimeout(() => prev.classList.remove('exit'), 380);
+  }
 
   next.classList.add('active');
   currentId = nextId;
