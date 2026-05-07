@@ -6,7 +6,7 @@
   <title>Plant Care Guide</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&family=PT+Mono&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -24,9 +24,17 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="container">
-      <h1>Keep Your Plants<br /><em>Thriving</em></h1>
-      <p class="hero-sub">Simple, practical guides for every plant parent — whether you're a beginner or a seasoned grower.</p>
+    <div class="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=80"
+        alt="Lush green botanical garden"
+      />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow">Your green companion</p>
+      <h1>Help Your Plants<br /><em>Flourish</em></h1>
+      <p class="hero-sub">Simple, loving guides for every plant parent — whether you're nurturing your first succulent or tending a full indoor jungle.</p>
       <a href="#basics" class="btn">Start Learning</a>
     </div>
   </section>
@@ -34,33 +42,73 @@
   <!-- The Basics -->
   <section class="section" id="basics">
     <div class="container">
-      <span class="section-label">01 / Fundamentals</span>
+      <p class="eyebrow">Fundamentals</p>
       <h2>The Basics</h2>
       <p class="section-sub">Three things every plant needs to survive and thrive.</p>
       <div class="grid-3">
+
         <div class="card">
-          <div class="card-icon">&#128167;</div>
-          <h3>Watering</h3>
-          <p>Most plants prefer to dry out slightly between waterings. Check the soil with your finger — if the top inch is dry, it's time to water. Overwatering is the #1 cause of plant death.</p>
+          <div class="card-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=600&q=80"
+              alt="Watering a houseplant"
+            />
+          </div>
+          <div class="card-body">
+            <div class="card-icon">&#128167;</div>
+            <h3>Watering</h3>
+            <p>Most plants prefer to dry out slightly between waterings. Check the soil with your finger — if the top inch is dry, it's time to water. Overwatering is the #1 cause of plant death.</p>
+          </div>
         </div>
+
         <div class="card">
-          <div class="card-icon">&#9728;&#65039;</div>
-          <h3>Light</h3>
-          <p>Match your plant to your light conditions. Succulents love bright direct sun; ferns and pothos thrive in low indirect light. A sunny south-facing window is the brightest spot in your home.</p>
+          <div class="card-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1459156212016-c812468e2115?auto=format&fit=crop&w=600&q=80"
+              alt="Plant on a sunny windowsill"
+            />
+          </div>
+          <div class="card-body">
+            <div class="card-icon">&#9728;&#65039;</div>
+            <h3>Light</h3>
+            <p>Match your plant to your light conditions. Succulents love bright direct sun; ferns and pothos thrive in low indirect light. A south-facing window is the brightest spot in your home.</p>
+          </div>
         </div>
+
         <div class="card">
-          <div class="card-icon">&#127807;</div>
-          <h3>Soil</h3>
-          <p>Use the right soil mix for your plant type. Cacti need fast-draining gritty mix; tropical plants prefer a rich, moisture-retaining potting mix. Good drainage prevents root rot.</p>
+          <div class="card-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=600&q=80"
+              alt="Hands holding rich potting soil"
+            />
+          </div>
+          <div class="card-body">
+            <div class="card-icon">&#127807;</div>
+            <h3>Soil</h3>
+            <p>Use the right soil mix for your plant type. Cacti need fast-draining gritty mix; tropical plants prefer rich, moisture-retaining potting mix. Good drainage prevents root rot.</p>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
+  <!-- Tips banner image -->
+  <div class="banner-img">
+    <img
+      src="https://images.unsplash.com/photo-1463320726281-696a3cc57e3a?auto=format&fit=crop&w=1600&q=80"
+      alt="Collection of green houseplants"
+    />
+    <div class="banner-text">
+      <p>"A garden is a grand teacher. It teaches patience and careful watchfulness."</p>
+      <span>— Gertrude Jekyll</span>
+    </div>
+  </div>
+
   <!-- Care Tips -->
   <section class="section section-alt" id="tips">
     <div class="container">
-      <span class="section-label">02 / Advanced Care</span>
+      <p class="eyebrow">Advanced Care</p>
       <h2>Care Tips</h2>
       <p class="section-sub">Level up your plant care with these simple habits.</p>
       <div class="grid-2">
@@ -99,6 +147,7 @@
   <!-- Footer -->
   <footer class="footer">
     <p>&#127807; PlantCare Guide &mdash; Helping plants (and their people) flourish.</p>
+    <p class="footer-credit">Photos by <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></p>
   </footer>
 
 </body>
